@@ -18,7 +18,7 @@ jobs:
     - name: Clone source
       run: |
         cd /home/runner
-        git clone https://github.com/coolsnowwolf/lede.git
+        git clone https://github.com/RealKiro/lede.git
         sudo chmod -R 777 lede
         sudo chown -R runner:runner lede
         cd /home/runner/lede
