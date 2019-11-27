@@ -18,7 +18,7 @@ jobs:
     - name: Clone source
       run: |
         cd /home/runner
-        git clone https://github.com/RealKiro/lede.git
+        git clone https://github.com/coolsnowwolf/lede.git
         sudo chmod -R 777 lede
         sudo chown -R runner:runner lede
         cd /home/runner/lede
@@ -27,7 +27,7 @@ jobs:
     - name: Clone config
       run: |
         cd /home/runner/lede/
-        wget https://raw.githubusercontent.com/RealKiro/build-lede/master/.config
+        wget https://raw.githubusercontent.com/cainiao5/build-lede/master/.config
     - name: Build
       run: | 
         cd /home/runner/lede 
